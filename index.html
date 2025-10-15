@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generative AI for Work & Research</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      color: #222;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    header {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea 20%, #764ba2 80%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+    }
+    header .hero-content {
+      position: relative;
+      max-width: 800px;
+      padding: 0 1rem;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    nav a {
+      font-weight: 500;
+      color: #333;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #764ba2;
+    }
+    section {
+      padding: 4rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section-bg {
+      position: relative;
+      overflow: hidden;
+    }
+    .section-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, #f3f4f6 0%, #e2e8f0 100%);
+      z-index: -1;
+    }
+    h2 {
+      color: #4b0082;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #764ba2, #667eea);
+      color: white;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about-me">About Me</a>
+    <a href="#about-course">Course</a>
+    <a href="#weekly-submissions">Submissions</a>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <h1>Generative AI for Work & Research</h1>
+      <p>Productivity Bootcamp 2025 Q4 — by Dr. Hamsadvani Anand Kuganantham</p>
+    </div>
+  </header>
+
+  <section id="about-me" class="section-bg">
+    <div class="fade-in">
+      <h2>About Me</h2>
+      <p><strong>Dr. Hamsadvani Anand Kuganantham</strong> is a global health researcher with over 15 years of experience leading research across WHO, University of Oxford, and UNICEF.</p>
+      <p>She has pioneered evidence-based policy implementation and translational research in pandemic preparedness, pathogen surveillance, and implementation science across 15+ countries. Her work has impacted global health policy for tens of millions.</p>
+      <p>Currently, she is Global Research Manager at The Global Health Network, Oxford, leading international projects across Africa, India, UK, and Vietnam.</p>
+      <p>She holds an MSc in Health Policy, Planning & Financing (LSHTM / LSE) and an MBBS (Dr. MGR Medical University, India).</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/dr-hamsadvani-k-368a7320/" target="_blank">linkedin.com/in/dr-hamsadvani-k-368a7320</a></p>
+    </div>
+  </section>
+
+  <section id="about-course">
+    <div class="fade-in">
+      <h2>About the Course</h2>
+      <p><strong>Generative AI for Work & Research Productivity Bootcamp 2025 Q4</strong> is an 8-week hands-on program to help professionals and researchers use AI productively — no coding required.</p>
+      <ul>
+        <li>Create professional websites, documents, and presentations with AI support.</li>
+        <li>Perform literature reviews, analyze datasets, and build dashboards with intuitive AI tools.</li>
+        <li>Design custom chatbots for domain-specific Q&A.</li>
+        <li>Automate workflows and recurring tasks.</li>
+        <li>Use AI for image, video, and design generation/editing.</li>
+        <li>Integrate AI tools into daily projects to boost impact.</li>
+      </ul>
+      <p>By the end, you'll be able to use AI effectively to save time, raise work quality, and solve real-world challenges in research, creative, or business domains.</p>
+    </div>
+  </section>
+
+  <section id="weekly-submissions" class="section-bg">
+    <div class="fade-in">
+      <h2>Weekly Submissions</h2>
+      <p>Here are the project submissions (placeholders for now):</p>
+      <ul>
+        <li><strong>Week 1:</strong> Websites & Presentations — <em>Your AI Course Portfolio Website</em> (Placeholder)</li>
+        <li><strong>Week 2:</strong> Automated Data Analysis — <em>Privacy & AI-Automated Analysis</em> (Placeholder)</li>
+        <li><strong>Week 3:</strong> Literature Reviews with AI (Coming soon)</li>
+        <li><strong>Week 4:</strong> Designing AI Workflows (Coming soon)</li>
+        <li><strong>Week 5:</strong> Chatbots for Research Support (Coming soon)</li>
+        <li><strong>Week 6:</strong> Image & Video AI Tools (Coming soon)</li>
+        <li><strong>Week 7:</strong> Advanced Integrations (Coming soon)</li>
+        <li><strong>Week 8:</strong> Final Project Presentation (Coming soon)</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dr. Hamsadvani Anand Kuganantham | Generative AI for Work & Research</p>
+  </footer>
+
+  <script>
+    // Intersection Observer to fade in sections
+    document.addEventListener('DOMContentLoaded', () => {
+      const faders = document.querySelectorAll('.fade-in');
+      const options = {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        });
+      }, options);
+      faders.forEach(f => {
+        appearOnScroll.observe(f);
+      });
+    });
+  </script>
+
+</body>
+</html>
