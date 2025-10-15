@@ -1,196 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generative AI for Work & Research</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative AI for Work & Research | Dr. Hamsadvani Anand Kuganantham</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #eef2f3, #8ec5fc, #e0c3fc);
       color: #222;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
-    a { text-decoration: none; color: inherit; }
     header {
-      position: relative;
-      height: 100vh;
-      background: linear-gradient(135deg, #667eea 20%, #764ba2 80%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      color: #fff;
       text-align: center;
-      color: white;
-    }
-    header::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.3);
-    }
-    header .hero-content {
+      padding: 4rem 1rem;
+      border-bottom-left-radius: 50% 10%;
+      border-bottom-right-radius: 50% 10%;
       position: relative;
-      max-width: 800px;
-      padding: 0 1rem;
-      z-index: 1;
     }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-    header p {
-      font-size: 1.3rem;
-      opacity: 0.9;
-    }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    header p { font-size: 1.1rem; }
+
     nav {
-      position: fixed;
+      position: sticky;
       top: 0;
-      width: 100%;
-      background: rgba(255,255,255,0.9);
+      background: rgba(255, 255, 255, 0.8);
       backdrop-filter: blur(8px);
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1rem 0;
-      z-index: 100;
+      padding: 0.8rem;
       border-bottom: 1px solid rgba(0,0,0,0.1);
+      z-index: 10;
     }
     nav a {
-      font-weight: 500;
+      text-decoration: none;
       color: #333;
+      font-weight: 500;
       transition: color 0.3s;
     }
-    nav a:hover {
-      color: #764ba2;
-    }
+    nav a:hover { color: #764ba2; }
+
     section {
-      padding: 4rem 1rem;
-      max-width: 900px;
-      margin: 0 auto;
+      max-width: 1000px;
+      margin: 4rem auto;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-    .section-bg {
-      position: relative;
-      overflow: hidden;
+    h2 { color: #4b0082; margin-bottom: 1rem; font-size: 1.8rem; }
+    p, li { margin-bottom: 1rem; }
+
+    .highlight {
+      background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
     }
-    .section-bg::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(120deg, #f3f4f6 0%, #e2e8f0 100%);
-      z-index: -1;
-    }
-    h2 {
-      color: #4b0082;
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+    ul { padding-left: 1.2rem; }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      background: linear-gradient(135deg, #764ba2, #667eea);
-      color: white;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2.2rem; }
-      header p { font-size: 1rem; }
+      padding: 2rem;
+      background: linear-gradient(90deg, #764ba2, #667eea);
+      color: #fff;
+      border-top-left-radius: 50% 10%;
+      border-top-right-radius: 50% 10%;
+      margin-top: 5rem;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="#about-me">About Me</a>
-    <a href="#about-course">Course</a>
-    <a href="#weekly-submissions">Submissions</a>
-  </nav>
-
   <header>
-    <div class="hero-content">
-      <h1>Generative AI for Work & Research</h1>
-      <p>Productivity Bootcamp 2025 Q4 — by Dr. Hamsadvani Anand Kuganantham</p>
-    </div>
+    <img class="avatar" src="https://github.com/Hamsadvani/graph-ai-portfolio2/blob/main/Hamsadvani%202025%20pic.png?raw=true" alt="Dr. Hamsadvani Anand Kuganantham">
+    <h1>Generative AI for Work & Research</h1>
+    <p>Productivity Bootcamp 2025 Q4 — by <strong>Dr. Hamsadvani Anand Kuganantham</strong></p>
   </header>
 
-  <section id="about-me" class="section-bg">
-    <div class="fade-in">
-      <h2>About Me</h2>
-      <p><strong>Dr. Hamsadvani Anand Kuganantham</strong> is a global health researcher with over 15 years of experience leading research across WHO, University of Oxford, and UNICEF.</p>
-      <p>She has pioneered evidence-based policy implementation and translational research in pandemic preparedness, pathogen surveillance, and implementation science across 15+ countries. Her work has impacted global health policy for tens of millions.</p>
-      <p>Currently, she is Global Research Manager at The Global Health Network, Oxford, leading international projects across Africa, India, UK, and Vietnam.</p>
-      <p>She holds an MSc in Health Policy, Planning & Financing (LSHTM / LSE) and an MBBS (Dr. MGR Medical University, India).</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/dr-hamsadvani-k-368a7320/" target="_blank">linkedin.com/in/dr-hamsadvani-k-368a7320</a></p>
-    </div>
+  <nav>
+    <a href="#about-me">About Me</a>
+    <a href="#about-course">About the Course</a>
+    <a href="#weekly-submissions">Weekly Submissions</a>
+  </nav>
+
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p><strong>Dr. Hamsadvani Anand Kuganantham</strong> is a global health researcher with over 15 years of experience leading multidisciplinary research initiatives across the <span class="highlight">World Health Organization</span>, <span class="highlight">University of Oxford</span>, and <span class="highlight">UNICEF</span>.</p>
+    <p>She has pioneered evidence-based policy implementation and translational research in pandemic preparedness, pathogen surveillance, and implementation science across 15+ countries. Her leadership has influenced global health policies affecting more than 70 million people.</p>
+    <p>Dr. Kuganantham currently serves as <strong>Global Research Manager</strong> at The Global Health Network, University of Oxford, where she leads six international projects spanning Africa, India, Vietnam, and the UK. She continues to bridge public health and data science, fostering equitable research capacity across LMICs.</p>
+    <p>She holds an MSc in Health Policy, Planning, and Financing from the <strong>London School of Hygiene and Tropical Medicine</strong> and <strong>London School of Economics</strong>, and an MBBS from <strong>Dr. MGR Medical University</strong>, India.</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/dr-hamsadvani-k-368a7320/" target="_blank">linkedin.com/in/dr-hamsadvani-k-368a7320</a></p>
   </section>
 
   <section id="about-course">
-    <div class="fade-in">
-      <h2>About the Course</h2>
-      <p><strong>Generative AI for Work & Research Productivity Bootcamp 2025 Q4</strong> is an 8-week hands-on program to help professionals and researchers use AI productively — no coding required.</p>
-      <ul>
-        <li>Create professional websites, documents, and presentations with AI support.</li>
-        <li>Perform literature reviews, analyze datasets, and build dashboards with intuitive AI tools.</li>
-        <li>Design custom chatbots for domain-specific Q&A.</li>
-        <li>Automate workflows and recurring tasks.</li>
-        <li>Use AI for image, video, and design generation/editing.</li>
-        <li>Integrate AI tools into daily projects to boost impact.</li>
-      </ul>
-      <p>By the end, you'll be able to use AI effectively to save time, raise work quality, and solve real-world challenges in research, creative, or business domains.</p>
-    </div>
+    <h2>About the Course</h2>
+    <p><strong>Generative AI for Work & Research Productivity Bootcamp 2025 Q4</strong> is an 8‑week hands-on program designed to help professionals, researchers, and innovators harness the power of AI to enhance productivity and accelerate real-world impact—without requiring coding expertise.</p>
+
+    <p>This course empowers participants to:</p>
+    <ul>
+      <li>Create professional websites, documents, and presentations with AI assistance.</li>
+      <li>Perform literature reviews, analyze data, and build dashboards using intuitive AI tools.</li>
+      <li>Design custom chatbots for domain-specific applications.</li>
+      <li>Set up automated workflows to streamline repetitive tasks.</li>
+      <li>Use AI for creating and editing images, videos, and design materials.</li>
+      <li>Develop practical AI solutions integrated into daily work and research projects.</li>
+    </ul>
+
+    <p>By the end of the program, participants will be equipped to use AI strategically—to save time, elevate work quality, and generate innovative outcomes across research, creative, and business contexts.</p>
   </section>
 
-  <section id="weekly-submissions" class="section-bg">
-    <div class="fade-in">
-      <h2>Weekly Submissions</h2>
-      <p>Here are the project submissions (placeholders for now):</p>
-      <ul>
-        <li><strong>Week 1:</strong> Websites & Presentations — <em>Your AI Course Portfolio Website</em> (Placeholder)</li>
-        <li><strong>Week 2:</strong> Automated Data Analysis — <em>Privacy & AI-Automated Analysis</em> (Placeholder)</li>
-        <li><strong>Week 3:</strong> Literature Reviews with AI (Coming soon)</li>
-        <li><strong>Week 4:</strong> Designing AI Workflows (Coming soon)</li>
-        <li><strong>Week 5:</strong> Chatbots for Research Support (Coming soon)</li>
-        <li><strong>Week 6:</strong> Image & Video AI Tools (Coming soon)</li>
-        <li><strong>Week 7:</strong> Advanced Integrations (Coming soon)</li>
-        <li><strong>Week 8:</strong> Final Project Presentation (Coming soon)</li>
-      </ul>
-    </div>
+  <section id="weekly-submissions">
+    <h2>Weekly Submissions</h2>
+    <p>This section will be updated weekly with project submissions from the course:</p>
+    <ul>
+      <li><strong>Week 1:</strong> Websites & Presentations – <em>Your AI‑Course Portfolio Website</em> (Placeholder)</li>
+      <li><strong>Week 2:</strong> Automated Data Analysis – <em>Privacy & AI‑Automated Analysis</em> (Placeholder)</li>
+      <li><strong>Week 3:</strong> Literature Reviews with AI – (Coming soon)</li>
+      <li><strong>Week 4:</strong> Designing AI Workflows – (Coming soon)</li>
+      <li><strong>Week 5:</strong> Chatbots for Research Support – (Coming soon)</li>
+      <li><strong>Week 6:</strong> Image & Video AI Tools – (Coming soon)</li>
+      <li><strong>Week 7:</strong> Advanced Integrations – (Coming soon)</li>
+      <li><strong>Week 8:</strong> Final Project Presentation – (Coming soon)</li>
+    </ul>
   </section>
 
   <footer>
     <p>&copy; 2025 Dr. Hamsadvani Anand Kuganantham | Generative AI for Work & Research</p>
   </footer>
-
-  <script>
-    // Intersection Observer to fade in sections
-    document.addEventListener('DOMContentLoaded', () => {
-      const faders = document.querySelectorAll('.fade-in');
-      const options = {
-        threshold: 0.2,
-        rootMargin: '0px 0px -50px 0px'
-      };
-      const appearOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        });
-      }, options);
-      faders.forEach(f => {
-        appearOnScroll.observe(f);
-      });
-    });
-  </script>
 
 </body>
 </html>
